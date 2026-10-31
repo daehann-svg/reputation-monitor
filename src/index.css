@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap");
+:root {
+  font-family: "IBM Plex Sans KR", "Malgun Gothic", sans-serif;
+  color: #293331;
+  background: #f8faf9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --accent: #087f73;
+  --ink: #293331;
+  --muted: #7a8580;
+  --line: #e3e8e5;
+  --red: #c6534f;
+  --amber: #a8791f;
+  letter-spacing: 0;
+  color-scheme: light;
+  font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  letter-spacing: 0;
+}
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+  border: 1px solid #dce3df;
+  border-radius: 5px;
+  padding: 9px 13px;
+  background: #fff;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+  min-height: 36px;
+}
+button:hover:not(:disabled) {
+  background: #f0f5f2;
+  border-color: #b7c9c0;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+button.primary:hover:not(:disabled) {
+  background: #06685f;
+  border-color: #06685f;
+}
+button.danger {
+  color: #fff;
+  background: var(--red);
+  border-color: var(--red);
+}
+button.danger:hover:not(:disabled) {
+  background: #a9403c;
+  border-color: #a9403c;
+}
+input:not([type="checkbox"]):not([type="color"]),
+textarea,
+select {
+  border: 1px solid #dce3df;
+  background: white;
+  color: var(--ink);
+  border-radius: 5px;
+  padding: 10px 11px;
+  min-height: 38px;
+  min-width: 0;
+  width: 100%;
+}
+select {
+  padding-right: 27px;
+}
+textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #9aa39e;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+input[type="color"] {
+  width: 42px;
+  height: 32px;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+:focus-visible {
+  outline: 2px solid #0b9184;
+  outline-offset: 3px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+svg {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+::selection {
+  background: #c8eee3;
+}
